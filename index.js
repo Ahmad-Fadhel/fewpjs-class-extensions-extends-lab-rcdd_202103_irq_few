@@ -33,15 +33,15 @@ class Triangle extends Polygon {
 class Square extends Polygon {
 
   get isValid() {
-    let x = this.array[0];
-    let y = this.array[1];
-    let z = this.array[2];
-    let w = this.array[3];
-    return (x === y && y === z && z === w)? true : false;
+    let side1 = this.array[0];
+    let side2 = this.array[1];
+    let side3 = this.array[2];
+    let side4 = this.array[3];
+    return (side1 === side2 && side2 === side3 && side3 === side4)? true : false;
   }
 
   get area() {
-    let x = this.array[0];
-    return (x * x);
+    let areaCal = this.array[0];
+    return (areaCal * areaCal);
   }
 }
