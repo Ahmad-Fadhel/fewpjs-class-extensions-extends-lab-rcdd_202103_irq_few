@@ -8,10 +8,12 @@ class Polygon {
     return this.sides.length
   }
   
-  get perimeter(){
-    return this.sides.map((side, i)=>{
-      side++
-    })
+ get perimeters() {
+    let perimeter = 0;
+    for(let i = 0; i < this.getCount; i++) {
+      perimeter += this.sides[i];
+    }
+    return perimeter;
   }
 }
 
