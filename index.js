@@ -6,13 +6,13 @@ class Polygon {
     this.count = this.sides.length
   }
 
-  get getCount() {
+  get countSides() {
     return this.sides.length
   }
 
   get perimeter() {
     let sum = 0;
-    for (let i = 0; i < this.sides.length; i++) {
+    for (let i = 0; i < this.countSides; i++) {
       let side = this.sides[i];
       sum += side;
     }
