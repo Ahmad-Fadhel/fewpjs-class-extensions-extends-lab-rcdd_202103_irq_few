@@ -16,8 +16,12 @@ class Polygon {
 }
 
 class Triangle extends Polygon{
-  get isValid(){
-    return this.side[0]+this.side[1] > this.side[2]
+  get isValid() {
+    let x = this.sides[0];
+    let y = this.sides[1];
+    let z = this.sides[2];
+
+    return ((x+y) > z && (x+z) > y && (z+y) > x)? true : false
   }
 }
 
