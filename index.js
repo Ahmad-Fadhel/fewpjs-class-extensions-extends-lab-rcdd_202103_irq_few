@@ -5,13 +5,13 @@ class Polygon {
     this.count = this.array.length;
   }
 
-  get getCount(){
+  get countSides(){
     return this.array.length;
   }
 
   get perimeter() {
     let peri = 0;
-    for(let i = 0; i < this.getCount; i++) {
+    for(let i = 0; i < this.countSides; i++) {
       peri += this.array[i];
     }
     return peri;
